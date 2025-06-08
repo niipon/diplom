@@ -1,0 +1,20 @@
+.contacts {
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://sun9-61.userapi.com/impf/KR3Ta8-TIzygTtoDjL3mnXwe7fUq6Ip8nO1H7g/WjGm2D6u0XI.jpg?size=1920x768&quality=95&crop=0,98,1280,511&sign=ddd973290c26e1dfb3115ea6247bafcd&type=cover_group');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts h1 {
+    color: aliceblue;
+    font-size: 40px;
+
+}
+
+.contacts p {
+    color: rgb(133, 130, 130);
+    font-size: 25px;
+}

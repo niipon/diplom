@@ -1,0 +1,180 @@
+.korz-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.63);
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+}
+
+/* Контейнер для самой корзины */
+.korz-container {
+   width: 5000px;
+   background-color: white;
+   padding: 24px;
+   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+   border-radius: 16px;
+   transition: transform 0.3s ease-in-out;
+   transform: none;
+
+}
+
+.korz-overlay .korz-container {
+   transform: none;
+}
+
+
+
+
+
+
+         .zakr {background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%)}
+         .zakr {
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+          }
+
+          .zakr:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+
+.korzina {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: url('../img/i.webp') no-repeat center center;
+    background-size: 32px 32px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 0;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1100;
+}
+
+.korzina:hover {
+    background-color: black;
+}
+
+.img-korz {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 10px;
+}
+
+.korzina-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.korzina-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(76,175,80,0.10), 0 1.5px 8px rgba(0,0,0,0.10);
+    padding: 28px 24px;
+    margin: 18px 0;
+    transition: box-shadow 0.25s, transform 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 260px;
+    min-width: 220px;
+    flex: 1 1 240px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.korzina-card:hover {
+    box-shadow: 0 8px 32px rgba(76,175,80,0.18), 0 4px 16px rgba(0,0,0,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.korzina-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    margin-right: 0;
+    background: #f5f5f5;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+
+.korzina-card:hover img {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 32px rgba(76,175,80,0.18), 0 1.5px 8px rgba(0,0,0,0.12);
+}
+
+.korzina-card h2 {
+    font-size: 1.1rem;
+    color: #222;
+    margin: 8px 0 4px 0;
+    text-align: center;
+}
+
+.korzina-card p {
+    margin: 4px 0;
+    color: #444;
+    font-size: 0.98rem;
+    text-align: center;
+}
+
+.korzina-card .remove {
+    margin-top: 12px;
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255,88,88,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.korzina-card .remove:hover {
+    background: linear-gradient(90deg, #f09819 0%, #ff5858 100%);
+    box-shadow: 0 4px 16px rgba(255,88,88,0.15);
+}

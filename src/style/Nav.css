@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, #000000 0%, #0f0f0f 100%);
+    border-radius: 22px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    padding: 20px 36px;
+    width: fit-content;
+    margin: 60px auto 0 auto;
+    position: relative;
+    min-width: 440px;
+    gap: 38px;
+}
+
+.navbar a, .enter {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    margin: 0 8px;
+    padding: 0 10px 0 10px;
+    border-radius: 14px;
+    transition: 
+        color 0.2s,
+        background 0.2s,
+        transform 0.2s;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 60px;
+    position: relative;
+}
+
+.navbar a svg, .enter svg {
+    font-size: 28px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
+    transition: 
+        color 0.2s,
+        filter 0.2s,
+        box-shadow 0.2s,
+        transform 0.2s;
+}
+
+.navbar a.active, .navbar a:focus, .navbar a:hover, .enter.active, .enter:focus, .enter:hover {
+    color: #fff;
+    transform: translateY(-8px) scale(1.08);
+}
+
+.navbar a.active svg, .navbar a:focus svg, .navbar a:hover svg,
+.navbar button.active svg, .navbar button:focus svg, .navbar button:hover svg {
+    filter: drop-shadow(0 0 8px #fff) brightness(1.2);
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.18);
+    transform: scale(1.18);
+}
+
+.navbar a span, .navbar button span {
+    font-size: 14px;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+body {
+    background: linear-gradient(90deg, #131313 0%, #222222 100%);
+}

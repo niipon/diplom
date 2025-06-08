@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://gazetazamoskvoreche.moscow/wp-content/uploads/sites/4/2023/04/abd3d8e0-1d33-4c52-87a6-932b5921596d.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home h1 {
+    font-size: 30px;
+    color: white;
+
+}
+
+
+.home p {
+    font-size: 20px;
+    color: aliceblue;
+
+}
+    
+.home span {
+    font-size: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.home span:hover {
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px #fff;
+}
+
+.home-link {
+    text-decoration: none;
+}

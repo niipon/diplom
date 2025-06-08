@@ -1,0 +1,123 @@
+.tovars-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px 20px;
+    margin: 16px 0;
+    transition: box-shadow 0.2s;
+    display: flex;
+    align-items: сenter;
+    justify-content: center;
+    max-width: 400px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(76,175,80,0.10), 0 1.5px 8px rgba(0,0,0,0.10);
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.tovars-card:hover {
+    box-shadow: 0 8px 32px rgba(76,175,80,0.18), 0 4px 16px rgba(0,0,0,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.tovars h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.tovars p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .tovars-card {
+        max-width: 100%;
+        padding: 16px 8px;
+    }
+}
+
+.tovars-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    background: #f5f5f5;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+
+.tovars-card:hover img {
+    transform: scale(1.08) rotate(-3deg);
+    box-shadow: 0 8px 32px rgba(76,175,80,0.18), 0 1.5px 8px rgba(0,0,0,0.12);
+}
+
+.tovars-list {
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("https://media.gq.com.tw/photos/5dbc88d72551d400086a5c12/16:9/w_2560%2Cc_limit/2016102754277537.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.tovars-list h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.tovars-input {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.zagruzka-tovars {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.product-btn {background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%)}
+.product-btn {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tovars-list__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tovars-card {
+    flex: 1 1 320px;
+    max-width: 400px;
+    min-width: 280px;
+    box-sizing: border-box;
+}
